@@ -119,6 +119,9 @@ data <- data[   !(data$Asylum %in% c("","Various/Unknown","Stateless","Tibetan")
 data <- data[    !(data$Origin %in% c("","Various/Unknown","Stateless","Tibetan") ) , ]
 #str(data)
 
+#########################################################################3
+##### Generate One PNG per year in a loop
+
 # Unique year in that subset -- that's why need to be cast from factor  to character
 years <- unique(as.character(data$Year))
 
