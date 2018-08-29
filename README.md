@@ -7,3 +7,5 @@ This is a project inspired by http://flowingdata.com/2011/05/11/how-to-map-conne
 
 https://github.com/patilv/Refugees
 
+One objective is to build some nice animation such as : https://leonawicz.github.io/gc_animation_example/app_traffic_example.html 
+

@@ -27,6 +27,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ### http://egallic.fr/maps-with-r/
 ## https://leonawicz.github.io/gc_animation_example/app_traffic_example.html
 
+## Maybe to be amended with https://github.com/robertgrant/pictogram 
+
 library(maps)
 library(geosphere)
 library(plyr)
@@ -889,8 +891,31 @@ ggplot() +
 
 
 # Spatio Temporal Analysis
-Animation
 
-anim
+An animation can be used to present the population movement over time
+
+* This needs still to be adjusted to represent difference in flow betwen years...*
+
+```{r animate, echo=FALSE, warning=FALSE, cache=FALSE, tidy = TRUE, message=FALSE, comment = "",  size="small"}
+##################################################################
+## Animation 
+
+#frame.to.animate <- ggplot() +
+#  geom_polygon(data = world.df, aes(x = long, y = lat, group = group), size = 0.3, fill="#bbdaa4", colour = "grey65") +
+#  scale_y_continuous(breaks = (-2:2) * 30) +
+#  scale_x_continuous(breaks = (-4:4) * 45) +
+#  coord_map("ortho", orientation=c(30, 30, 0))+
+#  theme_map() +
+#  geom_line(aes(x=long,y=lat,group=group,  color="blue", alpha=0.9, frame = Year),size=Value, data= gcircles) +
+#  scale_colour_gradient(low="#fee8c8", high="#e34a33") +
+#  geom_point(aes(x=longitude.x, y=latitude.x, frame = Year),data=data.coord, alpha = 0.8, size = 1, colour = "blue") +
+#  geom_point(aes(x=longitude.y, y=latitude.y, frame = Year),data=data.coord, alpha = 0.8, size = 1, colour = "red") +
+#  geom_text(data = data.coord, aes(x = 28.5, y = 1.5, frame = Year, label = data.coord$Year), color = 'white', size = 12)
+
+# animated.map <- gg_animate(frame.to.animate, interval = 0.005, ani.width = 1200, ani.height = 900, title_frame = FALSE)
+# animated.map %>% gg_animate_save("out/animatedmap.gif")
+```
+
+![Animation](https://raw.githubusercontent.com/unhcr-mena/popstats/gh-pages/out/animatedmap.gif)
 
 
