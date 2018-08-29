@@ -916,6 +916,6 @@ An animation can be used to present the population movement over time
 # animated.map %>% gg_animate_save("out/animatedmap.gif")
 ```
 
-![Animation](https://raw.githubusercontent.com/unhcr-mena/popstats/gh-pages/out/animatedmap.gif)
+![](https://raw.githubusercontent.com/unhcr-mena/popstats/gh-pages/out/animatedmap.gif)
 
 
